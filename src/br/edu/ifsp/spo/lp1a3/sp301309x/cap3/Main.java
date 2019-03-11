@@ -16,16 +16,16 @@ public class Main {
 		
 		System.out.println("Calculo de frequência cardíaca");
 		
-		System.out.println("\n Digite seu nome: ");
+		System.out.println("Digite seu nome: ");
 		nome = scanf.next();
-		System.out.println("\n Digite seu sobrenome: ");
+		System.out.println("Digite seu sobrenome: ");
 		snome = scanf.next();
 		
-		System.out.println("\n Inofrme seu dia de nascimento: ");
+		System.out.println("Inofrme seu dia de nascimento: ");
 		dia = scanf.nextInt();
-		System.out.println("\n Inofrme seu mes de nascimento: ");
+		System.out.println("Inofrme seu mes de nascimento: ");
 		mes = scanf.nextInt();
-		System.out.println("\n Inofrme seu ano de nascimento: ");
+		System.out.println("Inofrme seu ano de nascimento: ");
 		ano = scanf.nextInt();
 		
 		HeartRates hr = new HeartRates (nome, snome, dia, mes, ano);
@@ -33,11 +33,11 @@ public class Main {
 		hr.FcAlvo50();
 		hr.FcAlvo85();
 		
-		System.out.println("\n-----Resultados-----");
-		System.out.printf("\nNome: %s %s", hr.getNome(), hr.getSnome() );
-		System.out.printf("\nData de nascimento: %d/%d/%d", hr.getDia(), hr.getMes(), hr.getAno());
-		System.out.printf("\nFrequência cardíaca máxima: %d", hr.getFc1());
-		System.out.printf("\nFrequência carcíaca alvo: entre %.2f e %.2f\n", hr.getFc2(), hr.getFc3());
+		System.out.println("-----Resultados-----");
+		System.out.printf("Nome: %s %s\n", hr.getNome(), hr.getSnome() );
+		System.out.printf("Data de nascimento: %d/%d/%d\n", hr.getDia(), hr.getMes(), hr.getAno());
+		System.out.printf("Frequência cardíaca máxima: %d\n", hr.getFc1());
+		System.out.printf("Frequência carcíaca alvo: entre %.2f e %.2f", hr.getFc2(), hr.getFc3());
 		
 				
 	}
