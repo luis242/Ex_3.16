@@ -20,8 +20,6 @@ public class HeartRates {
 		this.ano=ano;
 	}
 	
-	//Getters
-	
 	public String getNome() {
 		return this.nome;
 	}
@@ -58,8 +56,6 @@ public class HeartRates {
 		return this.fc3;
 	}
 	
-	//Setters
-	
 	public void setNome (String nm) {
 		this.nome=nm;
 	}
@@ -95,8 +91,6 @@ public class HeartRates {
 	public void setFc3 (int fc3) {
 		this.fc3=fc3;
 	}
-	
-	//Calculo de idade com base no dia 10/03/2019
 	
 	public int Idade () {
 		this.idade = 2019 - this.ano;
